@@ -11,5 +11,10 @@
 
 + 0725_slides.pdf ...7/25のスライド
 + exercises.pdf ...Rブートキャンプ用のエクササイズ（演習問題）
-+ exercises.ipynb ...Jupyter Labで実行する用
++ exercises.ipynb ...Jupyterで実行する用
 + exercise/ ...エクササイズで使うデータセット 
++ exercises_answer.ipynb ...エクササイズの解答(GitHub上でうまく表示されない場合は[こちら](https://nbviewer.jupyter.org/github/satocos135/lecture2020shimane/blob/master/exercises_answer.ipynb))
+
+## Notes
+
++ 2020.07.25 19:00 エクササイズの解答をアップロードしました
