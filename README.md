@@ -9,11 +9,55 @@
 
 ## ファイルについて
 
-+ 0725_slides.pdf ...7/25のスライド
-+ exercises.pdf ...Rブートキャンプ用のエクササイズ（演習問題）
-+ exercises.ipynb ...Jupyterで実行する用
-+ exercise/ ...エクササイズで使うデータセット 
-+ exercises_answer.ipynb ...エクササイズの解答(GitHub上でうまく表示されない場合は[こちら](https://nbviewer.jupyter.org/github/satocos135/lecture2020shimane/blob/master/exercises_answer.ipynb))
++ Rブートキャンプ関連
+    + slide/0725_R_bootcamp.pdf ...スライド
+    + exercises.pdf ...Rブートキャンプ用のエクササイズ（演習問題）
+    + exercises.ipynb ...Jupyterで実行する用
+    + exercise/* ...エクササイズで使うデータセット 
+    + exercises_answer.ipynb ...エクササイズの解答(GitHub上でうまく表示されない場合は[こちら](https://nbviewer.jupyter.org/github/satocos135/lecture2020shimane/blob/master/exercises_answer.ipynb))
++ テキストマイニング講義関連
+    + slide/0726_textmining_01.pdf ...前半部スライド
+    + slide/0726_textmining_02.pdf ...後半部スライド
+    + analysis01.* ...分析①『夢十夜』の分析
+    + analysis02.* ...分析②『こころ』の分析
+    + functions.r ...分析で使う関数
+    + data/* ...分析で使うデータ
+    + dict/* ...分析用の辞書の例
+    + preprocessing.* ...データ前処理: RMeCabの基礎
+
+
+### 分析用コード
+
+rファイル(.r)とipynbファイル(.ipynb)があります。
+
++ ipynbはJupyterLab(JupyterNotebook)で作成されたファイルで、GitHub上でソースコードとその実行結果をみることができます。
++ rファイルはRのソースコードで、より詳しいコードの解説と、ネットワークグラフ用のソースコードが入っています。一行ずつ実行していくことで、分析を再現できます
+
+
+### ソースコードの実行について
+
+1. GitHubからzipファイルをダウンロードする
+1. zipファイルをを解凍する
+1. Rを起動する
+    + (RStudioで分析する場合)
+        + RStudioでフォルダ内のrファイルを開く 
+    + (Rで分析する場合)
+        + Rを起動する
+1. 解凍したフォルダを作業フォルダに設定する
+    + setwd(解凍先のフォルダのパス)を実行する。フォルダのパスは以下のいずれかの方法で取得することができる
+        + アドレスバーを右クリックして「アドレスのコピー」を選択
+        + フォルダを右クリック→プロパティ。表示される「場所」の内容をコピー
+        + 好きなフォルダの配下(e.g. C:\\User\Documents)にフォルダを移動する
+    + setwd()実行後、getwd()を実行して、うまくフォルダが設定されていることを確認する
+1. ひとつずつコードを実行して確認する
+
+### 分析データについて
+
+実習には夏目漱石「夢十夜」および夏目漱石『こころ』本文を分析用に編集したものを用いた。
+
+いずれもパブリックドメインの作品として青空文庫にて公開されているデータを用いた。
+
+
 
 ## Notes
 
