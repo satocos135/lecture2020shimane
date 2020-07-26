@@ -30,6 +30,7 @@ yume %>% head()
 
 # str_length(): 文字列の長さ
 yume[, 'content'] %>% str_length() %>% hist(breaks=25, xlab='Paragraph length', main='Histogram of paragraph length')
+
 yume['length'] = yume[, 'content'] %>% str_length() # 段落の長さを格納する
 boxplot(length ~ section_id, data=yume, main='Paragraph length of each section')
 
@@ -101,5 +102,4 @@ tfidf[,i] %>%
 }
 
 par(mfrow=c(1,1)) # 設定をもとに戻す
-
 

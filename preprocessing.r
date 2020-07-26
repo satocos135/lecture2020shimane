@@ -3,6 +3,8 @@
 ###     - dplyr
 ###     - stringr
 ###     - RMeCab
+### 事前準備
+### - setwd()でこのファイルが入ったフォルダの絶対パスを指定する
 
 
 ### RMecabの基礎
@@ -10,10 +12,13 @@
 # + MeCab: 形態素解析エンジン
 # + RMeCab: MeCabをR上で使うためのパッケージ
 
+
+library('dplyr')
 library('RMeCab')
 
 (test = RMeCabC('今日は本を読んだ') %>% unlist())
-
+getwd()
+setwd('c:/Users/satoc/Desktop/2020/島根大学レクチャー/lecture2020shimane/')
 
 # %in%との組み合わせ
 # names(): ベクトルについているラベルを抜き出す

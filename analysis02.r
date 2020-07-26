@@ -30,7 +30,9 @@ kokoro['section_id2'] = kokoro['part_id'] * 100 + kokoro['section_id']
 boxplot(length ~ section_id2, data=kokoro, main='Paragraph length of each section')
 
 # 分析のため各部ごとに文章を結合する
-parts = kokoro %>% group_by(part_id) %>% summarise(text = paste0(content, collapse=''))
+parts = kokoro %>% 
+    group_by(part_id) %>% 
+    summarise(text = paste0(content, collapse=''))
 parts = as.data.frame(parts)
 
 dim(parts) # 次元の確認
@@ -321,6 +323,7 @@ res %>% head()
 
 
 # 描画用データに変換する
+# parse_cooc > function.rを参照
 df = parse_cooc(names(res), as.vector(res))
 
 # データの形状
